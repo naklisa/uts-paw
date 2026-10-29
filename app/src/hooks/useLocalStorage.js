@@ -13,14 +13,16 @@ export function useLocalStorage(key, initialValue) {
 
     const setValue = (value) => {
         try {
-            const valueToStore =
-                value instanceof Function ? value(storedValue) :
-                    setStoredValue(valueToStore);
-            window.localStorage.setItem(key, JSON.stringify(valueToStore));
+            const valueToStory = value instanceof Function ? value(storedValue) : value;
+
+            setStoredValue(valueToStory);
+
+            window.localStorage.setItem(key, JSON.stringify(valueToStory));
         } catch (err) {
-            console.error('Gagal Menyimpan ke Local Storage:', err);
+            console.error('Gagal menyimpan ke local Storage', err);
         }
     };
+
     return [storedValue, setValue];
 }
 
