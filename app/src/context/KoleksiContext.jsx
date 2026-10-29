@@ -32,8 +32,15 @@ export function KoleksiProvider({ children }) {
                     throw new Error('Gagal memuat data koleksi dari server');
                 }
                 const data = await res.json();
-                setKoleksi(data);
-                window.localStorage.setItem('koleksi_portofolio', JSON.stringify(data));
+                setKoleksi((prev) => {
+                    const idSudahAda = new Set(prev.map((item) => String(item.id)));
+                    const gabungan = [
+                        ...data.filter((item) => !idSudahAda.has(String(item.id))),
+                        ...prev,
+                    ];
+                    window.localStorage.setItem('koleksi_portofolio', JSON.stringify(gabungan));
+                    return gabungan;
+                });
             } catch (err) {
                 setError(err.message || 'Terjadi kesalahan saat memuat data');
             } finally {
@@ -55,16 +62,23 @@ export function KoleksiProvider({ children }) {
             tautan: itemBaru.tautan?.trim() || 'https://github.com',
         };
 
-        const daftarBaru = [...koleksi, itemLengkap];
-        setKoleksi(daftarBaru);
-        setKoleksiLokal(daftarBaru);
+        setKoleksi((prev) => {
+            const daftarBaru = [...prev, itemLengkap];
+            setKoleksiLokal(daftarBaru);
+            window.localStorage.setItem('koleksi_portofolio', JSON.stringify(daftarBaru));
+            return daftarBaru;
+        });
+
         return itemLengkap;
     };
 
     const hapusItem = (id) => {
-        const daftarBaru = koleksi.filter((item) => String(item.id) !== String(id));
-        setKoleksi(daftarBaru);
-        setKoleksiLokal(daftarBaru);
+        setKoleksi((prev) => {
+            const daftarBaru = prev.filter((item) => String(item.id) !== String(id));
+            setKoleksiLokal(daftarBaru);
+            window.localStorage.setItem('koleksi_portofolio', JSON.stringify(daftarBaru));
+            return daftarBaru
+        });
     };
 
     return (

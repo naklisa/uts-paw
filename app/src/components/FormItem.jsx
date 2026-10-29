@@ -27,7 +27,7 @@ export default function FormItem({ onSimpan }) {
     };
 
     return (
-        <from onSubmit={handleSubmit} className="form-koleksi" noValidate>
+        <form onSubmit={handleSubmit} className="form-koleksi" noValidate>
             {errorJudul && (
                 <div role="alert" className="pesan-error">
                     {errorJudul}
@@ -37,7 +37,7 @@ export default function FormItem({ onSimpan }) {
             <div className="form-grup">
                 <label htmlFor="input-judul">Judul</label>
                 <input
-                    id="input-jdudul"
+                    id="input-judul"
                     type="text"
                     value={judul}
                     onChange={(e) => {
@@ -100,6 +100,6 @@ export default function FormItem({ onSimpan }) {
             <button type="submit" className="btn-utama">
                 Simpan
             </button>
-        </from>
+        </form>
     );
 }
