@@ -9,7 +9,7 @@ export default function Statistik() {
 
     const hitunganKategori = koleksi.reduce((acc, item) => {
         const kat = item.kategori || 'lainnya';
-        acc[kat] = (acc[at] || 0) + 1;
+        acc[kat] = (acc[kat] || 0) + 1;
         return acc;
     }, {});
 

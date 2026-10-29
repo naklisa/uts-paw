@@ -1,0 +1,502 @@
+#app-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#header-utama {
+    background-color: rgba(12, 14, 18, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #262c3a;
+    padding: 1.1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+
+#konten-utama {
+    flex: 1;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+}
+
+#cari-judul {
+    background-color: #0c0e12;
+}
+
+.site-header {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.header-brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.brand-subtitle {
+    font-size: 0.78rem;
+    color: #10b981;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.site-nav {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: #9ca3af;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: 1px solid transparent;
+    transition: all 0.18s ease;
+}
+
+.nav-link.active {
+    background-color: #ff5e1a;
+    color: #0c0e12;
+    border-color: #ff5e1a;
+    box-shadow: 3px 3px 0px #ffffff;
+}
+
+.site-footer {
+    background-color: #080a0d;
+    border-top: 2px solid #262c3a;
+    color: #9ca3af;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    margin-top: auto;
+}
+
+.hero-section {
+    background-color: #161a22;
+    border: 2px solid #2e3646;
+    border-radius: 12px;
+    padding: 2.75rem 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 6px 6px 0px #ff5e1a;
+}
+
+.hero-section h1 {
+    font-size: 2.3rem;
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+}
+
+.tema-teks {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #0c0e12;
+    background-color: #10b981;
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    color: #d1d5db;
+    max-width: 650px;
+    font-size: 1rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.75rem;
+    flex-wrap: wrap;
+}
+
+.grid-ringkasan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem;
+}
+
+.kartu-ringkasan {
+    background-color: #161a22;
+    border: 2px solid #2e3646;
+    border-radius: 10px;
+    padding: 1.6rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    box-shadow: 4px 4px 0px #10b981;
+}
+
+.ringkasan-label {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #9ca3af;
+    font-weight: 700;
+}
+
+.ringkasan-nilai {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: #ff5e1a;
+    font-variant-numeric: tabular-nums;
+}
+
+.ringkasan-keterangan {
+    font-size: 0.86rem;
+    color: #9ca3af;
+}
+
+
+.halaman-koleksi h1,
+.halaman-tambah h1,
+.halaman-statistik h1,
+.halaman-tentang h1,
+.halaman-detail h1 {
+    font-size: 1.85rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.filter-bar {
+    display: flex;
+    gap: 1.25rem;
+    background-color: #161a22;
+    padding: 1.35rem;
+    border-radius: 10px;
+    border: 2px solid #2e3646;
+    margin: 1.25rem 0 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.filter-group label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #e5e7eb;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.input-field {
+    padding: 0.7rem 0.9rem;
+    border: 2px solid #2e3646;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #ffffff;
+    background-color: #0c0e12;
+    font-family: inherit;
+    transition: all 0.15s ease;
+}
+
+.grid-koleksi {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.35rem;
+}
+
+.kartu-item {
+    background-color: #161a22;
+    border: 2px solid #2e3646;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.9rem;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.kartu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge-kategori {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border: 1px solid #10b981;
+    font-size: 0.76rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.tahun-item {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fbbf24;
+    background-color: rgba(251, 191, 36, 0.12);
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    font-variant-numeric: tabular-nums;
+}
+
+.kartu-judul {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.kartu-info {
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+.kartu-info strong {
+    color: #e5e7eb;
+}
+
+.kartu-aksi {
+    margin-top: 0.5rem;
+    padding-top: 0.9rem;
+    border-top: 1px dashed #2e3646;
+}
+
+
+.btn-utama,
+.btn-sekunder,
+.btn-detail,
+.btn-hapus {
+    display: inline-block;
+    padding: 0.65rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 2px solid #0c0e12;
+    text-align: center;
+    transition: all 0.15s ease;
+}
+
+.btn-utama {
+    background-color: #ff5e1a;
+    color: #0c0e12;
+    border-color: #ff5e1a;
+    box-shadow: 3px 3px 0px #ffffff;
+}
+
+.btn-sekunder {
+    background-color: #1f2430;
+    color: #ffffff;
+    border-color: #3b4454;
+}
+
+.btn-detail {
+    background-color: #1f2430;
+    color: #ff5e1a;
+    border-color: #ff5e1a;
+    width: 100%;
+}
+
+.btn-hapus {
+    background-color: #ef4444;
+    color: #ffffff;
+    border-color: #ef4444;
+    box-shadow: 3px 3px 0px #7f1d1d;
+}
+
+.detail-kartu,
+.form-koleksi {
+    background-color: #161a22;
+    border: 2px solid #2e3646;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 1.25rem;
+    box-shadow: 5px 5px 0px #262c3a;
+}
+
+.detail-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-baris {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid #262c3a;
+    font-size: 0.95rem;
+}
+
+.detail-baris dt {
+    font-weight: 700;
+    color: #9ca3af;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+}
+
+.detail-baris dd {
+    color: #ffffff;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.detail-baris a {
+    color: #10b981;
+    text-decoration: underline;
+}
+
+.detail-aksi {
+    display: flex;
+    gap: 0.9rem;
+    margin-top: 1.75rem;
+}
+
+.form-koleksi {
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-grup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-grup label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #e5e7eb;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.pesan-error {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #fca5a5;
+    border: 2px solid #ef4444;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.tabel-statistik {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #161a22;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 1.25rem;
+    border: 2px solid #2e3646;
+}
+
+.tabel-statistik th,
+.tabel-statistik td {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border-bottom: 1px solid #262c3a;
+}
+
+.tabel-statistik thead {
+    background-color: #1f2430;
+    color: #ff5e1a;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.tabel-statistik tfoot {
+    background-color: #0c0e12;
+    color: #10b981;
+    font-weight: 800;
+}
+
+.nav-link:hover {
+    background-color: #1f2430;
+    color: #ffffff;
+    border-color: #3b4454;
+}
+
+.kartu-item:hover {
+    border-color: #ff5e1a;
+    transform: translate(-3px, -3px);
+    box-shadow: 6px 6px 0px #ff5e1a;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #ff5e1a;
+    box-shadow: 3px 3px 0px rgba(255, 94, 26, 0.35);
+}
+
+.btn-utama:hover {
+    background-color: #ff7438;
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px #ffffff;
+}
+
+.btn-detail:hover {
+    background-color: #ff5e1a;
+    color: #0c0e12;
+}
+
+.badge-kategori::before {
+    content: "▸ ";
+    color: #10b981;
+}
+
+.tabel-statistik tbody tr:nth-child(even) {
+    background-color: #12161d;
+}
+
+
+@media (max-width: 768px) {
+    #header-utama {
+        padding: 1rem;
+    }
+
+    #konten-utama {
+        padding: 1.75rem 1rem 3rem;
+    }
+
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-section {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+    }
+
+    .detail-baris {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+}

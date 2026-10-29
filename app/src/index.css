@@ -1,16 +1,26 @@
-:root {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.5;
-  color: #1f2328;
-  background: #f6f7f9;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
+  font-family: 'Plus Jakarta Sans', 'Inter', 'Segoe UI', system-ui, sans-serif;
+  background-color: #0c0e12;
+  background-image: radial-gradient(#232936 1px, transparent 1px);
+  background-size: 22px 22px;
+  color: #f3f4f6;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
-main {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+a {
+  color: #ff5e1a;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  line-height: 1.2;
 }
