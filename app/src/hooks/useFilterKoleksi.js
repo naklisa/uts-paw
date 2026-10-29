@@ -15,7 +15,7 @@ export function useFilterKoleksi(koleksi = []) {
         return koleksi.filter((item) => {
             const cocokJudul = item.judul
                 .toLowerCase()
-                .includes(katakunci.trim().toLowerCase());
+                .includes(kataKunci.trim().toLowerCase());
             const cocokKategori =
                 kategoriTerpilih === 'Semua' || item.kategori === kategoriTerpilih;
             return cocokJudul && cocokKategori;

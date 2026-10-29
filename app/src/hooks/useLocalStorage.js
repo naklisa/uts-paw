@@ -1,21 +1,21 @@
 import { useState } from "react";
 
 export function useLocalStorage(key, initialValue) {
-    const [storedValue, setStoredValue] = useStat(() => {
-        try{
+    const [storedValue, setStoredValue] = useState(() => {
+        try {
             const item = window.localStorage.getItem(key);
             return item ? JSON.parse(item) : initialValue;
-        }   catch {
+        } catch {
             return initialValue;
         }
     }
     );
-    
+
     const setValue = (value) => {
         try {
-            const valueToStore = 
+            const valueToStore =
                 value instanceof Function ? value(storedValue) :
-            setStoredValue(valueToStore);
+                    setStoredValue(valueToStore);
             window.localStorage.setItem(key, JSON.stringify(valueToStore));
         } catch (err) {
             console.error('Gagal Menyimpan ke Local Storage:', err);
