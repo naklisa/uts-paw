@@ -1,82 +1,82 @@
 [
   {
     "id": "1",
-    "judul": "Sistem Kasir Toko Kelontong",
-    "kategori": "Aplikasi Web",
-    "teknologi": "React, Node.js",
-    "tahun": 2024,
-    "tautan": "https://github.com/contoh/kasir-kelontong"
+    "judul": "WakeMeUp",
+    "kategori": "Aplikasi Mobile",
+    "teknologi": "TypeScript",
+    "tahun": 2026,
+    "tautan": "https://github.com/naklisa/WakeMeUp.git"
   },
   {
     "id": "2",
-    "judul": "Pendeteksi Hama Daun Padi",
-    "kategori": "Kecerdasan Buatan",
-    "teknologi": "Python, TensorFlow",
-    "tahun": 2024,
-    "tautan": "https://github.com/contoh/deteksi-hama"
+    "judul": "Vts-Panjang-Profile",
+    "kategori": "Aplikasi Web",
+    "teknologi": "TypeScript, JavaScript",
+    "tahun": 2026,
+    "tautan": "https://github.com/naklisa/Vts-Panjang-Profile.git"
   },
   {
     "id": "3",
-    "judul": "Catatan Keuangan Harian Anak Kos",
-    "kategori": "Aplikasi Mobile",
-    "teknologi": "Flutter, SQLite",
+    "judul": "Movie-Database-Explorer",
+    "kategori": "Aplikasi Web",
+    "teknologi": "TypeScript",
     "tahun": 2025,
-    "tautan": "https://github.com/contoh/dompet-kos"
+    "tautan": "https://github.com/naklisa/Movie-Database-Explorer.git"
   },
   {
     "id": "4",
-    "judul": "Peta Interaktif Jalur Pendakian Sumatera",
-    "kategori": "Sistem Informasi Geografis",
-    "teknologi": "Leaflet, JavaScript",
-    "tahun": 2025,
-    "tautan": "https://github.com/contoh/peta-gunung"
+    "judul": "Web-Profile-LembagaPers",
+    "kategori": "Aplikasi Web",
+    "teknologi": "TypeScript, Python",
+    "tahun": 2026,
+    "tautan": "https://github.com/naklisa/Web-Profile-Lempers.git"
   },
   {
     "id": "5",
-    "judul": "Bot Pengingat Jadwal Kuliah Otomatis",
-    "kategori": "Otomasi",
-    "teknologi": "Node.js, Telegram API",
-    "tahun": 2024,
-    "tautan": "https://github.com/contoh/bot-kuliah"
+    "judul": "Platform Peminjaman Fasilitas",
+    "kategori": "Aplikasi Mobile",
+    "teknologi": "Kotlin, Android SDK",
+    "tahun": 2026,
+    "tautan": "https://github.com/nahli123140049/Roomie.git"
   },
   {
     "id": "6",
-    "judul": "Portal Reservasi Lapangan Futsal",
+    "judul": "WebGIS Smart Campus ITERA",
     "kategori": "Aplikasi Web",
-    "teknologi": "Laravel, MySQL",
-    "tahun": 2025,
-    "tautan": "https://github.com/contoh/booking-futsal"
+    "teknologi": "Python, JavaScript",
+    "tahun": 2026,
+    "tautan": "https://github.com/nahli123140049/webgis-Full-Stack.git"
   },
   {
     "id": "7",
-    "judul": "Klasifikasi Sentimen Ulasan Film Indonesia",
-    "kategori": "Kecerdasan Buatan",
-    "teknologi": "Python, Scikit-Learn",
+    "judul": "Aplikasi Katalog Produk",
+    "kategori": "Aplikasi Web",
+    "teknologi": "JavaScript",
     "tahun": 2025,
-    "tautan": "https://github.com/contoh/sentimen-ulasan"
+    "tautan": "https://github.com/nahli123140049/Earnest_Apparell.git"
   },
   {
     "id": "8",
-    "judul": "Aplikasi Alarm Waktu Tidur Sehat",
-    "kategori": "Aplikasi Mobile",
-    "teknologi": "Kotlin, Android SDK",
-    "tahun": 2024,
-    "tautan": "https://github.com/contoh/alarm-tidur"
+    "judul": "Aplikasi Pencatatan Keuangan Pribadi ",
+    "kategori": "Aplikasi Web",
+    "teknologi": "TypeScript, PLpgSQL",
+    "tahun": 2026,
+    "tautan": "https://github.com/naklisa/Pencatatan-Keuangan.git"
   },
   {
     "id": "9",
-    "judul": "Dasbor Pemantau Suhu Gudang Logistik",
-    "kategori": "Internet of Things",
-    "teknologi": "ESP32, MQTT, React",
-    "tahun": 2026,
-    "tautan": "https://github.com/contoh/pantau-suhu"
+    "judul": "Aplikasi Rating Music",
+    "kategori": "Aplikasi Web",
+    "teknologi": "TypeScript, JavaScript",
+    "tahun": 2025,
+    "tautan": "https://github.com/naklisa/SuaraSa.git"
   },
   {
     "id": "10",
-    "judul": "Kalkulator Zakat dan Waris Digital",
-    "kategori": "Aplikasi Web",
-    "teknologi": "React, Tailwind CSS",
-    "tahun": 2026,
-    "tautan": "https://github.com/contoh/hitung-zakat"
+    "judul": "Prototype Aplikasi Schedule",
+    "kategori": "Desain",
+    "teknologi": "Figma",
+    "tahun": 2025,
+    "tautan": "https://s.itera.id/RBZ5Su"
   }
 ]
