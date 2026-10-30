@@ -5,22 +5,19 @@
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', 'Inter', 'Segoe UI', system-ui, sans-serif;
-  background-color: #0c0e12;
-  background-image: radial-gradient(#232936 1px, transparent 1px);
-  background-size: 22px 22px;
-  color: #f3f4f6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
 }
 
 a {
-  color: #ff5e1a;
+  color: #2563eb;
   text-decoration: none;
 }
 
 h1, h2, h3 {
-  letter-spacing: -0.02em;
+  color: #0f172a;
   font-weight: 800;
-  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
