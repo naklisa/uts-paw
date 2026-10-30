@@ -65,15 +65,37 @@ Ganti seluruh isi berkas ini dengan dokumentasi aplikasimu (butir rubrik A4). Ke
 ```markdown
 # Nama Aplikasi
 
-Nama: ...
-NIM: ...
-Kelas: ...
-Tema: ...
-Deployment: https://USERNAME.github.io/uts-paw/
+Nama: Nahli Saud Ramdani
+NIM: 123140049
+Kelas: RA
+Tema: Portofolio Proyek
+Deployment: https://naklisa.github.io/uts-paw/
 
 ![Tangkapan layar beranda](docs/beranda.png)
 
 ## Fitur
+
+1. **Beranda dan Ringkasan Metrik**:
+   - Menampilkan total item proyek dan variasi kategori yang tersimpan dalam koleksi.
+   - Navigasi cepat untuk melihat koleksi atau menambah proyek baru.
+2. **Koleksi Proyek dan Pencarian**
+   - Menampilkan seluruh proyek dalam bentuk kartu modern.
+   - Fitur pencarian instan berdasarkan judul proyek.
+   - Filter penyaringan berdasarkan kategori proyek.
+3. **Detail Proyek**
+   - Menampilkan spesifikasi lengkap: judul, kategori, teknologi, tahun pembuatan, dan tautan repositori.
+   - Tampilan pesan penanganan khusus jika ID proyek tidak ditemukan.
+   - Fitur penghapusan proyek dengan dialog konfirmasi sebelum kembali ke daftar koleksi.
+4. **Form Penambahan Proyek**
+   - Input terkontrol untuk seluruh atribut proyek (judul, kategori, teknologi, tahun, tautan).
+   - Validasi formulir dengan pesan peringatan interaktif role=alert.
+   - Penyimpanan data permanen secara lokal pada peramban menggunakan localStorage.
+5. **Statistik Proyek**
+   - Tabel ringkasan yang mengelompokkan dan menghitung jumlah proyek per kategori secara dinamis.
+6. **Tentang Pengembang**
+   - Halaman identitas pengembang terintegrasi dengan tautan repositori GitHub resmi.
+7. **Halaman 404 (NotFound)**
+   - Penanganan rute tak dikenal dengan tombol kembali ke beranda.
 
 - ...
 
@@ -85,5 +107,16 @@ npm run dev
 
 ## Konsep React yang dipakai
 
-- ...
-```
+1. **Hooks Bawaan:**
+   - Pemanfaatan useState, useEffect, useMemo, dan useContext
+2. **Cutom Hooks:**
+   -useLocalStorage: Mengelola sinkronisasi state React dengan browser localStorage
+   - useFilterKoleksi: Mengelola logika penyaringan data koleksi berdasarkan judul dan kategori secara reaktif.
+3. **Context API**
+   -KoleksiContext dan KoleksiProvider untuk global state management data portofolio di seluruh komponen.
+4. **Routing**
+   -react-router-dom v7 dengan 7 rute utama, parameter dinamis (useParams), navigasi terprogram (useNavigate), dan rute fallback 404.
+5. **Komponen Modular**
+   - Memisahan komponen antarmuka yang independen dan dapat digunakan kembali (Layout, KartuRingkasan, FilterBar, KartuItem, FormItem).
+6. **CSS dan Semantik**
+   - Desain antarmuka (Flexbox & CSS Grid) dengan @media query dan struktur HTML5 semantik (header, nav, main, footer, article, dl).
